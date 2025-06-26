@@ -1,13 +1,17 @@
 <html>
   <head>
-    <script src="./source/hello.js"></script>
-    <script src="./source/world.js"></script>
+    <!-- <script src="./source/hello.js"></script>
+    <script src="./source/world.js"></script> -->
   </head>
   <body>
     <h1>Hello, Webpack</h1>
     <div id="root"></div>
-    <script>
-      document.getElementById("root").innerHTML = word;
+    // 브라우저 환경에서는 import 구문을 바로 사용할 수 없기 때문에
+    type="module"를 꼭 작성해야함
+    <script type="module">
+      import hello from "./source/hello.js";
+      import world from "./source/world.js";
+      document.getElementById("root").innerHTML = hello + " " + world;
     </script>
   </body>
 </html>
