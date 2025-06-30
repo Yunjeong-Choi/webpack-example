@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./source/index.js",
+  entry: { index: "./source/index.js", about: "./source/about.js" },
   output: {
     // __dirname는 webpack.config.js 파일이 있는 경로
     path: path.resolve(__dirname, "public"),
-    filename: "index_bundle.js",
+    filename: "[name]_bundle.js",
   },
 };
