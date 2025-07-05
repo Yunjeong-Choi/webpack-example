@@ -1,3 +1,6 @@
+# 강의
+[생활코딩 [웹팩]](https://youtube.com/playlist?list=PLuHgQVnccGMChcT9IKopFDoAIoTA-03DA&si=ji88zXs80Sa_HWdk)
+
 # 1강. 수업소개
 
 ![](public/assets/webpack.png)
